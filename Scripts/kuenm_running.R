@@ -59,10 +59,10 @@ points(m5[, 2:3], col = cols5)
 
 ## splitting training and testing records
 kuenm_occsplit(occ = "MIS4_data/MIS4_coords_only_fixed_v2.csv", train.proportion = 0.75,
-               method = "random", name = "MIS4_data/occ")
+               method = "random", save = TRUE, name = "MIS4_data/occ")
 
 kuenm_occsplit(occ = "MIS5a_data/MIS5a_coords_only_fixed_v2.csv", train.proportion = 0.75,
-               method = "random", name = "MIS5a_data/occ")
+               method = "random", save = TRUE, name = "MIS5a_data/occ")
 
 ## preparing M variables
 kuenm_varcomb(var.dir = "MIS4_data/MIS4_climate", out.dir = "MIS4_data/M_variables",
